@@ -1,0 +1,27 @@
+{
+  "name": "ouagolo",
+  "version": "1.0.0",
+  "description": "Gestion des prstataires du système de la santé",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dognimin/ouagolo.git"
+  },
+  "author": "Dognimin KOULIBALI",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dognimin/ouagolo/issues"
+  },
+  "homepage": "https://github.com/dognimin/ouagolo#readme",
+  "dependencies": {
+    "bootstrap": "^5.0.0-beta3",
+    "bootstrap-icons": "^1.4.1",
+    "datatables.net": "^1.10.24",
+    "datatables.net-dt": "^1.10.24",
+    "jquery": "^3.6.0",
+    "jqueryui": "^1.11.1"
+  }
+}

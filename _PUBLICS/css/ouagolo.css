@@ -1,0 +1,52 @@
+.img_loading_page {
+    margin-top: 20%;
+    width: 150px;
+    position: relative !important;
+}
+.img_full_page {
+    width: 100%;
+    position: relative !important;
+}
+.img_half_page {
+    width: 50%;
+    position: relative !important;
+}
+#div_page_connexion,
+#div_page_index {
+
+}
+#div_connexion, #div_email, #div_creation_admin, #div_mot_de_passe {
+    padding: 20px;
+    margin-top: 3%;
+    border: 1px solid #3C578C;
+}
+#div_email {
+    display: none;
+}
+.align_right {text-align: right;}
+.align_left {text-align: left;}
+.align_center {text-align: center;}
+.align_justify {text-align: justify;}
+#nav_breadcrumb {
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #272b3f;
+}
+#div_main_page {
+    width: 100%;
+    color: #000000;
+    padding: 10px;
+    min-height: 80vh;
+    background-color: #f8f9fa;
+}
+.breadcrumb {
+    line-height: 20px;
+}
+#div_sidebar {
+    height: 100%;
+    display: block;
+    background-color: rgba(39,43,63,0.2);
+}
+#div_form {
+    display: none;
+}
