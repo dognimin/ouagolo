@@ -22,7 +22,8 @@ require_once "_CONFIGS/Includes/Titles.php";
     <link href="<?= NODE_MODULES.'bootstrap/dist/css/bootstrap-utilities.css';?>" rel="stylesheet" crossorigin="anonymous">
     <link href="<?= NODE_MODULES.'bootstrap-icons/font/bootstrap-icons.css';?>" rel="stylesheet" crossorigin="anonymous">
     <link href="<?= NODE_MODULES.'datatables.net-dt/css/jquery.dataTables.css';?>" rel="stylesheet" crossorigin="anonymous">
-
+    <link rel="icon" type="image/png" href="<?= IMAGES.'logos/logo-o.png';?>" />
     <title><?= TITLE;?></title>
 </head>
 <body>
+

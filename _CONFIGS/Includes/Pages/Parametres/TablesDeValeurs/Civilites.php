@@ -35,7 +35,7 @@ $nb_civilites = count($civilites);
     }else {
         include "../../_Forms/form_export.php";
         ?>
-        <table class="table table-bordered table-hover table-sm" id="tableDeValeurs">
+        <table class="table table-bordered table-hover table-sm table-striped" id="tableDeValeurs">
             <thead class="bg-info">
             <tr>
                 <th width="5">N°</th>
@@ -62,12 +62,12 @@ $nb_civilites = count($civilites);
                     <td class="align_right"><?= $ligne;?></td>
                     <td><?= $civilite['code'];?></td>
                     <td><?= $civilite['libelle'];?></td>
-                    <td><?= date('d/m/Y',strtotime($civilite['date_debut']));?></td>
+                    <td class="align_center"><?= date('d/m/Y',strtotime($civilite['date_debut']));?></td>
                     <td>
                         <button type="button" id="<?= $civilite['code'].'|'.$civilite['libelle'];?>" class="badge bg-<?php if($validite_edition == 0) {echo 'secondary';}else {echo 'warning';}?> btn_edit" <?php if($validite_edition == 0) {echo 'disabled';} ?>><i class="bi bi-brush"></i></button>
                     </td>
                     <td>
-                        <button type="button" class="badge bg-dark" data-bs-toggle="modal" data-bs-target="#historiqueModal"><i class="bi bi-clock-history"></i></button>
+                        <button type="button" class="badge bg-dark button_historique" data-bs-toggle="modal" id="<?= $civilite['code'];?>|civ" data-bs-target="#historiqueModal"><i class="bi bi-clock-history"></i></button>
                     </td>
                 </tr>
                 <?php
@@ -77,14 +77,14 @@ $nb_civilites = count($civilites);
             </tbody>
         </table>
         <div class="modal fade" id="historiqueModal" tabindex="-1" aria-labelledby="historiqueModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="historiqueModalLabel"><i class="bi bi-clock-history"></i> Historique des modifications</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                        ...
+                        <div class="modal-body" id="div_historique"></div>
                     </div>
                 </div>
             </div>
@@ -152,7 +152,7 @@ $nb_civilites = count($civilites);
                 .addClass('btn-warning')
                 .html('<i>Traitement...</i>');
             $.ajax({
-                url: '../_CONFIGS/Includes/Submits/Parametres/submit_civilite.php',
+                url: '../_CONFIGS/Includes/Submits/Parametres/TablesDeValeurs/submit_civilite.php',
                 type: 'POST',
                 data: {
                     'code': code,
@@ -212,10 +212,33 @@ $nb_civilites = count($civilites);
         $(".card-title").html('Edition de civilité');
 
     });
+
+
     $('#historiqueModal').modal({
         show: false,
         backdrop: 'static'
     });
+
+    $(".button_historique").click(function () {
+        let this_id = this.id,
+            tableau = this_id.split('|'),
+            donnee = tableau[0],
+            type_donnee = tableau[1];
+        if(donnee && type_donnee) {
+            $.ajax({
+                url: '../_CONFIGS/Includes/Searches/Parametres/search_historique_donnees.php',
+                type: 'POST',
+                data: {
+                    'donnee': donnee,
+                    'type': type_donnee
+                },
+                success: function (data) {
+                    $("#div_historique").html(data);
+                }
+            });
+        }
+    });
+
     $('#tableDeValeurs').DataTable();
 
     $("#export_input").change(function () {

@@ -17,6 +17,7 @@
             <label for="code_region_input" class="form-label">Region</label>
             <select class="form-select form-select-sm" id="code_region_input" aria-label=".form-select-sm" aria-describedby="codeRegionHelp">
                 <option value="">Sélectionnez</option>
+
             </select>
             <div id="codeRegionHelp" class="form-text"></div>
         </div>

@@ -16,7 +16,7 @@ class CATEGORIESSOCIOPROFESSIONNELLES extends  BDD
         if($a->errorCode() == "00000"){
             return array(
                 "success" => true,
-                "message" => 'Enregistrement effectue avec succès'
+                "message" => 'Enregistrement effectué avec succès'
             );
         }else{
             return array(
@@ -32,7 +32,7 @@ class CATEGORIESSOCIOPROFESSIONNELLES extends  BDD
         if ($a->errorCode() == "00000"){
             return array(
                 "success" => true,
-                "messages" => 'Enregistrement effectue avec succès.'
+                "messages" => 'Enregistrement effectué avec succès.'
             );
         }else{
             return array(
@@ -80,11 +80,11 @@ WHERE
     }
 
     public function editer($code, $libelle, $user){
-        $profil = $this->trouver($code);
-        if($profil) {
+        $categories_socio_pro = $this->trouver($code);
+        if($categories_socio_pro) {
             $date_fin = date('Y-m-d',strtotime('-1 day',time()));
-            if(strtotime($date_fin) > strtotime($profil['date_debut'])) {
-                $edition = $this->fermer($profil['code'],$date_fin,$user);
+            if(strtotime($date_fin) > strtotime($categories_socio_pro['date_debut'])) {
+                $edition = $this->fermer($categories_socio_pro['code'],$date_fin,$user);
                 if($edition['success'] == true) {
                     $json = $this->ajouter($code, $libelle, $user);
                 }else {
@@ -93,7 +93,7 @@ WHERE
             }else {
                 $json = array(
                     'success' => false,
-                    'message' => "La mise à jour de cette donnée ne peut se faire que 48h après la dernière modification. Veuillez réessayer le ".date('d/m/Y',strtotime('+2 day',strtotime($profil['date_debut'])))
+                    'message' => "La mise à jour de cette donnée ne peut se faire que 48h après la dernière modification. Veuillez réessayer le ".date('d/m/Y',strtotime('+2 day',strtotime($categories_socio_pro['date_debut'])))
                 );
             }
         }else {
@@ -122,7 +122,7 @@ ORDER BY
          A.date_creation DESC
         ";
         $a = $this->bdd->prepare($query);
-        $a->execute(array('%'.$code.'%'));
+        $a->execute(array($code));
         $json = $a->fetchAll();
         return $json;
     }

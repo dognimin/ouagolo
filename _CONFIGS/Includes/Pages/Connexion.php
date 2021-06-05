@@ -3,15 +3,23 @@ require_once "../../Classes/UTILISATEURS.php";
 if(!isset($_SESSION['nouvelle_session'])) {
     require_once "../../Classes/CIVILITES.php";
     require_once "../../Classes/SEXES.php";
+    require_once "../../Classes/LOCALISATIONSGEOGRAPHIQUES.php";
+
     $UTILISATEURS = new UTILISATEURS();
     $CIVILITES = new CIVILITES();
     $SEXES = new SEXES();
     $utilisateurs = $UTILISATEURS->lister();
     $nb_utilisateurs = count($utilisateurs);
+    $LOCALISATIONSGEOGRAPHIQUES = new LOCALISATIONSGEOGRAPHIQUES();
 
     $civilites = $CIVILITES->lister();
     $nb_civilites = count($civilites);
-
+    $civilites = $CIVILITES->lister();
+    $sexes = $SEXES->lister();
+    $Pays = $LOCALISATIONSGEOGRAPHIQUES->lister_pays();
+    $regions = $LOCALISATIONSGEOGRAPHIQUES->lister_regions(null);
+    $departements = $LOCALISATIONSGEOGRAPHIQUES->lister_departements(null);
+    $communes = $LOCALISATIONSGEOGRAPHIQUES->lister_communes(null);
     $sexes = $SEXES->lister();
     $nb_sexes = count($sexes);
     ?>
@@ -23,18 +31,18 @@ if(!isset($_SESSION['nouvelle_session'])) {
                 if($nb_utilisateurs != 0) {
                     ?>
                     <div class="col-md-4 col-md-auto" id="div_connexion">
-                        <p class="align_center"><img class="img_half_page" src="<?= IMAGES . 'logo-ouagolo.png'; ?>" alt="Logo Ouagolo"></p>
+                        <p class="align_center"><img class="img_half_page" src="<?= IMAGES . 'logos/logo-ouagolo.png'; ?>" alt="Logo Ouagolo"></p>
                         <?php include "_Forms/form_connexion.php";?>
                     </div>
                     <div class="col-md-4 col-md-auto" id="div_email">
-                        <p class="align_center"><img class="img_half_page" src="<?= IMAGES . 'logo-ouagolo.png'; ?>" alt="Logo Ouagolo"></p>
+                        <p class="align_center"><img class="img_half_page" src="<?= IMAGES . 'logos/logo-ouagolo.png'; ?>" alt="Logo Ouagolo"></p>
                         <?php include "_Forms/form_email.php";?>
                     </div>
                     <?php
                 }else {
                     ?>
                     <div class="col-md-8 col-md-auto" id="div_creation_admin">
-                        <p class="align_center"><img class="img_half_page" src="<?= IMAGES . 'logo-ouagolo.png'; ?>" alt="Logo Ouagolo"></p>
+                        <p class="align_center"><img class="img_half_page" src="<?= IMAGES . 'logos/logo-ouagolo.png'; ?>" alt="Logo Ouagolo"></p>
                         <?php include "_Forms/form_utilisateur.php";?>
                     </div>
                     <?php

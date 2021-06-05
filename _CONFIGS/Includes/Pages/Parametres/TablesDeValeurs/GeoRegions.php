@@ -34,12 +34,12 @@ $nb_regions = count($regions);
     <?php
     if($nb_regions == 0) {
         ?>
-        <p class="align_center alert alert-warning">Aucun pays n'a encore été enregistrée. <br />Cliquez sur <a href="" class="btn_add"><i class="bi bi-plus-square-fill"></i></a> pour ajouter une nouvelle</p>
+        <p class="align_center alert alert-warning">Aucune region n'a encore été enregistrée. <br />Cliquez sur <a href="" class="btn_add"><i class="bi bi-plus-square-fill"></i></a> pour ajouter une nouvelle</p>
         <?php
     }else {
         include "../../_Forms/form_export.php";
         ?>
-        <table class="table table-bordered table-hover table-sm" id="tableDeValeurs">
+        <table class="table table-bordered table-hover table-sm table-striped" id="tableDeValeurs">
             <thead class="bg-info">
             <tr>
                 <th width="5">N°</th>
@@ -66,16 +66,16 @@ $nb_regions = count($regions);
                 ?>
                 <tr>
                     <td class="align_right"><?= $ligne;?></td>
-                    <td><?= $region['nom_pays'];?></td>
+                    <td><?= $region['code_pays'];?></td>
                     <td><?= $region['code'];?></td>
                     <td><?= $region['nom'];?></td>
-                    <td><a href=""><?= $region['latitude'].','.$region['longitude'];?></a></td>
-                    <td><?= date('d/m/Y',strtotime($region['date_debut']));?></td>
+                    <td class="align_right"><a href=""><?= $region['latitude'].','.$region['longitude'];?></a></td>
+                    <td class="align_center"><?= date('d/m/Y',strtotime($region['date_debut']));?></td>
                     <td>
-                        <button type="button" id="<?= $region['code'].'|'.$region['nom'];?>" class="badge bg-<?php if($validite_edition == 0) {echo 'secondary';}else {echo 'warning';}?> btn_edit" <?php if($validite_edition == 0) {echo 'disabled';} ?>><i class="bi bi-brush"></i></button>
+                        <button type="button" id="<?= $region['code'].'|'.$region['nom'].'|'.$region['code_pays'].'|'.$region['longitude'].'|'.$region['latitude'];?>" class="badge bg-<?php if($validite_edition == 0) {echo 'secondary';}else {echo 'warning';}?> btn_edit" <?php if($validite_edition == 0) {echo 'disabled';} ?>><i class="bi bi-brush"></i></button>
                     </td>
                     <td>
-                        <button type="button" class="badge bg-dark" data-bs-toggle="modal" data-bs-target="#historiqueModal"><i class="bi bi-clock-history"></i></button>
+                        <button type="button" class="badge bg-dark button_historique" data-bs-toggle="modal" id="<?= $region['code'];?>|reg" data-bs-target="#historiqueModal"><i class="bi bi-clock-history"></i></button>
                     </td>
                 </tr>
                 <?php
@@ -85,15 +85,13 @@ $nb_regions = count($regions);
             </tbody>
         </table>
         <div class="modal fade" id="historiqueModal" tabindex="-1" aria-labelledby="historiqueModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="historiqueModalLabel"><i class="bi bi-clock-history"></i> Historique des modifications</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
+                    <div class="modal-body" id="div_historique"></div>
                 </div>
             </div>
         </div>
@@ -212,7 +210,7 @@ $nb_regions = count($regions);
                 .addClass('btn-warning')
                 .html('<i>Traitement...</i>');
             $.ajax({
-                url: '../_CONFIGS/Includes/Submits/Parametres/submit_geo_region.php',
+                url: '../_CONFIGS/Includes/Submits/Parametres/TablesDeValeurs/submit_geo_region.php',
                 type: 'POST',
                 data: {
                     'code_pays': code_pays,
@@ -285,9 +283,15 @@ $nb_regions = count($regions);
         let this_id = this.id,
             tableau = this_id.split('|'),
             code = tableau[0],
-            libelle = tableau[1];
+            libelle = tableau[1],
+            pays = tableau[2],
+            longitude = tableau[3],
+            latitude = tableau[4];
         $("#code_input").val(code).prop('disabled',true);
-        $("#libelle_input").val(libelle);
+        $("#nom_input").val(libelle);
+        $("#code_pays_input").val(pays);
+        $("#longitude_input").val(longitude);
+        $("#latitude_input").val(latitude);
 
 
         $(".card-title").html('Edition de région');
@@ -303,7 +307,25 @@ $nb_regions = count($regions);
     $("#com").click(function () {
         display_tables_de_valeurs('com');
     });
-
+    $(".button_historique").click(function () {
+        let this_id = this.id,
+            tableau = this_id.split('|'),
+            donnee = tableau[0],
+            type_donnee = tableau[1];
+        if(donnee && type_donnee) {
+            $.ajax({
+                url: '../_CONFIGS/Includes/Searches/Parametres/search_historique_donnees.php',
+                type: 'POST',
+                data: {
+                    'donnee': donnee,
+                    'type': type_donnee
+                },
+                success: function (data) {
+                    $("#div_historique").html(data);
+                }
+            });
+        }
+    });
     $('#historiqueModal').modal({
         show: false,
         backdrop: 'static'

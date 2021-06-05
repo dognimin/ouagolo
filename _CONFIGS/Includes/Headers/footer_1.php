@@ -10,6 +10,7 @@
 
 <!-- Ouagolo JS -->
 <script src="<?= JS.'index.js';?>"></script>
+<script src="<?= JS.'deconnexion_1.js';?>"></script>
 <?php
 if(ACTIVE_URL == URL) {
     echo '<script>display_index_page()</script>';

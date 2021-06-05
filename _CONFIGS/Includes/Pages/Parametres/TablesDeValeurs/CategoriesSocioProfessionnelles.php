@@ -62,7 +62,7 @@ $nb_categories = count($categories);
                     <td class="align_right"><?= $ligne;?></td>
                     <td><?= $categorie['code'];?></td>
                     <td><?= $categorie['libelle'];?></td>
-                    <td><?= date('d/m/Y',strtotime($categorie['date_debut']));?></td>
+                    <td class="align_center"><?= date('d/m/Y',strtotime($categorie['date_debut']));?></td>
                     <td>
                         <button type="button" id="<?= $categorie['code'].'|'.$categorie['libelle'];?>" class="badge bg-<?php if($validite_edition == 0) {echo 'secondary';}else {echo 'warning';}?> btn_edit" <?php if($validite_edition == 0) {echo 'disabled';} ?>><i class="bi bi-brush"></i></button>
                     </td>
@@ -148,7 +148,7 @@ $nb_categories = count($categories);
                 .addClass('btn-warning')
                 .html('<i>Traitement...</i>');
             $.ajax({
-                url: '../_CONFIGS/Includes/Submits/Parametres/submit_categorie_socio_professionnelle.php',
+                url: '../_CONFIGS/Includes/Submits/Parametres/TablesDeValeurs/submit_categorie_socio_professionnelle.php',
                 type: 'POST',
                 data: {
                     'code': code,

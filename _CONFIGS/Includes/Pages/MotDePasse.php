@@ -16,7 +16,7 @@ if($_SESSION) {
                                     <div class="row justify-content-center">
                                         <div class="row justify-content-md-center">
                                             <div class="col-md-4 col-md-auto" id="div_mot_de_passe">
-                                                <p class="align_center"><img class="img_half_page" src="<?= IMAGES . 'logo-ouagolo.png'; ?>" alt="Logo Ouagolo"></p>
+                                                <p class="align_center"><img class="img_half_page" src="<?= IMAGES . 'logos/logo-ouagolo.png'; ?>" alt="Logo Ouagolo"></p>
                                                 <?php include "_Forms/form_mot_de_passe.php";?>
                                             </div>
                                         </div>

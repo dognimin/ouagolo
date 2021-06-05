@@ -15,7 +15,7 @@ class SECTEURSACTIVITES extends BDD
         if($a->errorCode() == "00000"){
             return array(
                 "success" => true,
-                "message" => 'Enregistrement effectue avec succès'
+                "message" => 'Enregistrement effectué avec succès'
             );
         }else{
             return array(
@@ -31,7 +31,7 @@ class SECTEURSACTIVITES extends BDD
         if ($a->errorCode() == "00000"){
             return array(
                 "success" => true,
-                "messages" => 'Enregistrement effectue avec succès.'
+                "messages" => 'Enregistrement effectué avec succès.'
             );
         }else{
             return array(
@@ -58,6 +58,8 @@ WHERE
         $a->execute(array($code));
         return $a->fetch();
     }
+
+
     public function lister() {
         $query = "
 SELECT 
@@ -99,5 +101,33 @@ ORDER BY A.secteur_activite_libelle
         }
         return $json;
     }
+
+    public function lister_historique($code) {
+        $query = "
+SELECT 
+       A.secteur_activite_code AS code, 
+       A.secteur_activite_libelle AS libelle, 
+       A.secteur_activite_date_debut AS date_debut, 
+       A.secteur_activite_date_fin AS date_fin, 
+       A.date_creation, 
+       A.utilisateur_id_creation,
+       B.utilisateur_nom AS nom,
+       B.utilisateur_prenoms AS prenoms
+       
+FROM 
+     tb_ref_secteurs_activites A JOIN tb_utilisateurs B 
+         ON 
+             A.utilisateur_id_creation = B.utilisateur_id AND A.secteur_activite_code LIKE ?
+ORDER BY 
+         A.date_creation DESC
+        ";
+        $a = $this->bdd->prepare($query);
+        $a->execute(array('%'.$code.'%'));
+        $json = $a->fetchAll();
+        return $json;
+    }
+
+
+
 
 }

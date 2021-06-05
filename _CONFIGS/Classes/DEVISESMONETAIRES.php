@@ -16,7 +16,7 @@ class DEVISESMONETAIRES extends  BDD
         if($a->errorCode() == "00000"){
             return array(
                 "success" => true,
-                "message" => 'Enregistrement effectue avec succès'
+                "message" => 'Enregistrement effectué avec succès'
             );
         }else{
             return array(
@@ -32,7 +32,7 @@ class DEVISESMONETAIRES extends  BDD
         if ($a->errorCode() == "00000"){
             return array(
                 "success" => true,
-                "messages" => 'Enregistrement effectue avec succès.'
+                "messages" => 'Enregistrement effectué avec succès.'
             );
         }else{
             return array(
@@ -101,4 +101,30 @@ WHERE
         }
         return $json;
     }
+
+    public function lister_historique($code)
+    {
+        $query = "
+SELECT 
+       A.monnaie_code AS code,
+       A.monnaie_libelle AS libelle,
+       A.monnaie_date_debut AS date_debut,
+       A.monnaie_date_fin AS date_fin,
+       A.utilisateur_id_creation,
+       A.date_creation,
+       B.utilisateur_nom AS nom,
+       B.utilisateur_prenoms AS prenoms
+FROM
+     tb_ref_monnaies A JOIN tb_utilisateurs B 
+         ON 
+             A.utilisateur_id_creation = B.utilisateur_id AND A.monnaie_code LIKE ?
+ORDER BY 
+         A.date_creation DESC
+        ";
+        $a = $this->bdd->prepare($query);
+        $a->execute(array('%'.$code.'%'));
+        $json = $a->fetchAll();
+        return $json;
+    }
+
 }

@@ -15,7 +15,7 @@ class CIVILITES extends BDD
         if($a->errorCode() == "00000"){
             return array(
                 "success" => true,
-                "message" => 'Enregistrement effectue avec succès'
+                "message" => 'Enregistrement effectué avec succès'
             );
         }else{
             return array(
@@ -31,7 +31,7 @@ class CIVILITES extends BDD
         if ($a->errorCode() == "00000"){
             return array(
                 "success" => true,
-                "messages" => 'Enregistrement effectue avec succès.'
+                "messages" => 'Enregistrement effectué avec succès.'
             );
         }else{
             return array(
@@ -99,5 +99,29 @@ ORDER BY A.civilite_libelle
         }
         return $json;
     }
+
+    public function lister_historique($code) {
+        $query = "
+SELECT 
+       A.civilite_code AS code, 
+       A.civilite_libelle AS libelle, 
+       B.utilisateur_nom AS nom,
+       B.utilisateur_prenoms AS prenoms, 
+       A.civilite_date_debut AS date_debut, 
+       A.civilite_date_fin AS date_fin, 
+       A.date_creation, 
+       A.utilisateur_id_creation
+FROM 
+     tb_ref_civilites A JOIN tb_utilisateurs B 
+         ON 
+             A.utilisateur_id_creation = B.utilisateur_id AND A.civilite_code LIKE ?
+ORDER BY 
+         A.date_creation DESC
+";
+        $a = $this->bdd->prepare($query);
+        $a->execute(array('%'.$code.'%'));
+        return $a->fetchAll();
+    }
+
 
 }

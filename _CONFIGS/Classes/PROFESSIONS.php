@@ -16,7 +16,7 @@ class PROFESSIONS extends  BDD
         if($a->errorCode() == "00000"){
             return array(
                 "success" => true,
-                "message" => 'Enregistrement effectue avec succès'
+                "message" => 'Enregistrement effectué avec succès'
             );
         }else{
             return array(
@@ -27,12 +27,12 @@ class PROFESSIONS extends  BDD
     }
 
     private function fermer($code, $date_fin, $user) {
-        $a = $this->bdd->prepare("UPDATE tb_ref_professions  SET profession_date_fin = ?, date_edition = ?, utilisateur_id_edition = ? WHERE profession_code = ? AND profession_libelle IS NULL");
+        $a = $this->bdd->prepare("UPDATE tb_ref_professions  SET profession_date_fin = ?, date_edition = ?, utilisateur_id_edition = ? WHERE profession_code = ? AND profession_date_fin IS NULL");
         $a->execute(array($date_fin,date('Y-m-d H:i:s',time()),$user,$code));
         if ($a->errorCode() == "00000"){
             return array(
                 "success" => true,
-                "messages" => 'Enregistrement effectue avec succès.'
+                "messages" => 'Enregistrement effectué avec succès.'
             );
         }else{
             return array(
@@ -99,6 +99,31 @@ WHERE
         }else {
             $json = $this->ajouter($code, $libelle, $user);
         }
+        return $json;
+    }
+
+    public function lister_historique($code)
+    {
+        $query = "
+SELECT 
+       A.profession_code AS code,
+       A.profession_libelle AS libelle,
+       A.profession_date_debut AS date_debut,
+       A.profession_date_fin AS date_fin,
+       A.utilisateur_id_creation,
+       A.date_creation,
+       B.utilisateur_nom AS nom,
+       B.utilisateur_prenoms AS prenoms
+FROM
+     tb_ref_professions A JOIN tb_utilisateurs B 
+         ON 
+             A.utilisateur_id_creation = B.utilisateur_id AND A.profession_code LIKE ?
+ORDER BY 
+         A.date_creation DESC
+        ";
+        $a = $this->bdd->prepare($query);
+        $a->execute(array('%'.$code.'%'));
+        $json = $a->fetchAll();
         return $json;
     }
 }

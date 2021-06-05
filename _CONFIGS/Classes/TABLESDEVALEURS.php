@@ -10,6 +10,11 @@ class TABLESDEVALEURS
                 'code' => "put",
                 'libelle' => "Profils utilisateurs"
             ),
+
+            array(
+                'code' => "tac",
+                'libelle' => "Types accidents"
+            ),
             array(
                 'code' => "csp",
                 'libelle' => "Catégories socio-profésionnelles"
@@ -47,6 +52,10 @@ class TABLESDEVALEURS
                 'libelle' => "Types pièces d'identité"
             ),
             array(
+                'code' => "etab_service",
+                'libelle' => "Etablissements services"
+            ),
+            array(
                 'code' => "dev",
                 'libelle' => "Devises monetaires"
             ),
@@ -57,6 +66,18 @@ class TABLESDEVALEURS
             array(
                 'code' => "lge",
                 'libelle' => "Localisations géographiques"
+            ) ,
+        array(
+                'code' => "cps",
+                'libelle' => "Categories professionnels de santé"
+            ) ,
+        array(
+                'code' => "ordre",
+                'libelle' => "Ordres nationnaux"
+            ) ,
+        array(
+                'code' => "typ_pers",
+                'libelle' => "Types personnes"
             )
         );
         return $json;

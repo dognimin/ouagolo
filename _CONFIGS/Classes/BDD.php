@@ -23,6 +23,7 @@ define('NODE_MODULES', PUBLICS.'node_modules/');
 define('CSS', PUBLICS.'css/');
 define('JS', PUBLICS.'js/');
 define('IMAGES', PUBLICS.'images/');
+define('IMAGES_DIR', DIR.'_PUBLICS/images/');
 define('SERVEUR_ADRESSE_IP', $_SERVER['SERVER_ADDR']);
 define('CLIENT_ADRESSE_IP', $_SERVER['REMOTE_ADDR']);
 
@@ -30,6 +31,7 @@ define('SMTP_HOST', 'smtp.gmail.com');
 define('SMTP_PORT', 587);
 define('SMTP_USERNAME', 'techouseci@gmail.com');
 define('SMTP_PASSWORD', 'TecH@use#2@!8');
+
 
 class BDD
 {

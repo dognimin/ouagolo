@@ -16,7 +16,7 @@ class GROUPESSANGUINS extends BDD
         if($a->errorCode() == "00000"){
             return array(
                 "success" => true,
-                "message" => 'Enregistrement effectue avec succès'
+                "message" => 'Enregistrement effectué avec succès'
             );
         }else{
             return array(
@@ -32,7 +32,7 @@ class GROUPESSANGUINS extends BDD
         if ($a->errorCode() == "00000"){
             return array(
                 "success" => true,
-                "messages" => 'Enregistrement effectue avec succès.'
+                "messages" => 'Enregistrement effectué avec succès.'
             );
         }else{
             return array(
@@ -80,11 +80,11 @@ ORDER BY A.groupe_sanguin_libelle
     }
 
     public function editer($code, $libelle, $user){
-        $sexe = $this->trouver($code);
-        if($sexe) {
+        $groupesanguins = $this->trouver($code);
+        if($groupesanguins) {
             $date_fin = date('Y-m-d',strtotime('-1 day',time()));
-            if(strtotime($date_fin) > strtotime($sexe['date_debut'])) {
-                $edition = $this->fermer($sexe['code'],$date_fin,$user);
+            if(strtotime($date_fin) > strtotime($groupesanguins['date_debut'])) {
+                $edition = $this->fermer($groupesanguins['code'],$date_fin,$user);
                 if($edition['success'] == true) {
                     $json = $this->ajouter($code, $libelle, $user);
                 }else {
@@ -93,12 +93,37 @@ ORDER BY A.groupe_sanguin_libelle
             }else {
                 $json = array(
                     'success' => false,
-                    'message' => "La mise à jour de cette donnée ne peut se faire que 48h après la dernière modification. Veuillez réessayer le ".date('d/m/Y',strtotime('+2 day',strtotime($sexe['date_debut'])))
+                    'message' => "La mise à jour de cette donnée ne peut se faire que 48h après la dernière modification. Veuillez réessayer le ".date('d/m/Y',strtotime('+2 day',strtotime($groupesanguins['date_debut'])))
                 );
             }
         }else {
             $json = $this->ajouter($code, $libelle, $user);
         }
+        return $json;
+    }
+
+    public function lister_historique_groupe_sanguin($code) {
+        $query = "
+SELECT 
+       A.groupe_sanguin_code AS code, 
+       A.groupe_sanguin_libelle AS libelle, 
+       A.groupe_sanguin_date_debut AS date_debut, 
+       A.groupe_sanguin_date_fin AS date_fin, 
+       A.date_creation, 
+       A.utilisateur_id_creation,
+       B.utilisateur_nom AS nom,
+       B.utilisateur_prenoms AS prenoms
+       
+FROM 
+     tb_ref_groupes_sanguins A JOIN tb_utilisateurs B 
+         ON 
+             A.utilisateur_id_creation = B.utilisateur_id AND A.groupe_sanguin_code LIKE ?
+ORDER BY 
+         A.date_creation DESC
+        ";
+        $a = $this->bdd->prepare($query);
+        $a->execute(array('%'.$code.'%'));
+        $json = $a->fetchAll();
         return $json;
     }
 
@@ -118,7 +143,7 @@ ORDER BY A.groupe_sanguin_libelle
         if($a->errorCode() == "00000"){
             return array(
                 "success" => true,
-                "message" => 'Enregistrement effectue avec succès'
+                "message" => 'Enregistrement effectué avec succès'
             );
         }else{
             return array(
@@ -134,7 +159,7 @@ ORDER BY A.groupe_sanguin_libelle
         if ($a->errorCode() == "00000"){
             return array(
                 "success" => true,
-                "messages" => 'Enregistrement effectue avec succès.'
+                "messages" => 'Enregistrement effectué avec succès.'
             );
         }else{
             return array(
@@ -181,11 +206,11 @@ ORDER BY A.rhesus_libelle
     }
 
     public function editer_rhesus($code, $libelle, $user){
-        $sexe = $this->trouver_rhesus($code);
-        if($sexe) {
+        $rhesus = $this->trouver_rhesus($code);
+        if($rhesus) {
             $date_fin = date('Y-m-d',strtotime('-1 day',time()));
-            if(strtotime($date_fin) > strtotime($sexe['date_debut'])) {
-                $edition = $this->fermer_rhesus($sexe['code'],$date_fin,$user);
+            if(strtotime($date_fin) > strtotime($rhesus['date_debut'])) {
+                $edition = $this->fermer_rhesus($rhesus['code'],$date_fin,$user);
                 if($edition['success'] == true) {
                     $json = $this->ajouter_rhesus($code, $libelle, $user);
                 }else {
@@ -194,7 +219,7 @@ ORDER BY A.rhesus_libelle
             }else {
                 $json = array(
                     'success' => false,
-                    'message' => "La mise à jour de cette donnée ne peut se faire que 48h après la dernière modification. Veuillez réessayer le ".date('d/m/Y',strtotime('+2 day',strtotime($sexe['date_debut'])))
+                    'message' => "La mise à jour de cette donnée ne peut se faire que 48h après la dernière modification. Veuillez réessayer le ".date('d/m/Y',strtotime('+2 day',strtotime($rhesus['date_debut'])))
                 );
             }
         }else {
@@ -202,4 +227,29 @@ ORDER BY A.rhesus_libelle
         }
         return $json;
     }
+
+    public function lister_historique_rhesus($code) {
+        $query = "
+SELECT 
+       A.rhesus_code AS code, 
+       A.rhesus_libelle AS libelle, 
+       A.rhesus_date_debut AS date_debut, 
+       A.rhesus_date_fin AS date_fin, 
+       A.utilisateur_id_creation,
+       A.date_creation,
+       B.utilisateur_nom AS nom,
+       B.utilisateur_prenoms AS prenoms
+FROM 
+     tb_ref_rhesus A JOIN tb_utilisateurs B 
+         ON 
+             A.utilisateur_id_creation = B.utilisateur_id AND A.rhesus_code LIKE ?
+ORDER BY 
+         A.date_creation DESC
+        ";
+        $a = $this->bdd->prepare($query);
+        $a->execute(array('%'.$code.'%'));
+        $json = $a->fetchAll();
+        return $json;
+    }
+
 }

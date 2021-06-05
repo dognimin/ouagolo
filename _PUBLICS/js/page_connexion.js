@@ -48,7 +48,7 @@ jQuery(function () {
                 .addClass('btn-warning')
                 .html('<i>Vérification...</i>');
             $.ajax({
-                url: '_CONFIGS/Includes/Submits/Utilisateurs/submit_utilisateur_connexion.php',
+                url: '_CONFIGS/Includes/Submits/Parametres/Utilisateurs/submit_utilisateur_connexion.php',
                 type: 'POST',
                 data: {
                     'email': email,
@@ -128,7 +128,7 @@ jQuery(function () {
                 .addClass('btn-warning')
                 .html('<i>Vérification...</i>');
             $.ajax({
-                url: '_CONFIGS/Includes/Submits/Utilisateurs/submit_utilisateur_email.php',
+                url: '_CONFIGS/Includes/Submits/Parametres/Utilisateurs/submit_utilisateur_email.php',
                 type: 'POST',
                 data: {
                     'email': email
@@ -271,7 +271,7 @@ jQuery(function () {
                 .addClass('btn-warning')
                 .html('<i>Traitement...</i>');
             $.ajax({
-                url: '_CONFIGS/Includes/Submits/Utilisateurs/submit_utilisateur.php',
+                url: '_CONFIGS/Includes/Submits/Parametres/Utilisateurs/submit_utilisateur.php',
                 type: 'POST',
                 data: {
                     'id_user': id_user,
@@ -382,7 +382,7 @@ jQuery(function () {
                 .addClass('btn-warning')
                 .html('<i>Vérification...</i>');
             $.ajax({
-                url: '_CONFIGS/Includes/Submits/Utilisateurs/submit_utilisateur_mot_de_passe.php',
+                url: '_CONFIGS/Includes/Submits/Parametres/Utilisateurs/submit_utilisateur_mot_de_passe.php',
                 type: 'POST',
                 data: {
                     'actuel_mot_de_passe': actuel_mot_de_passe,

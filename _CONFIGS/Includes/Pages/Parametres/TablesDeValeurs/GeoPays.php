@@ -69,19 +69,19 @@ $devises = $DEVISESMONETAIRES->lister();
                 }
                 ?>
                 <tr>
-                    <td class="align_right"><?= $ligne;?></td>
+                    <td class="align_right"><?= $nb_etats;?></td>
                     <td><?= $etat['code'];?></td>
                     <td><?= $etat['nom'];?></td>
                     <td><?= $etat['gentile'];?></td>
                     <td class="align_right">+<?= $etat['indicatif_telephonique'];?></td>
-                    <td><?= $etat['libelle_monnaie'];?></td>
-                    <td><a href=""><?= $etat['latitude'].','.$etat['longitude'];?></a></td>
+                    <td><?= $etat['devise'];?></td>
+                    <td class="align_right"><a href=""><?= $etat['latitude'].','.$etat['longitude'];?></a></td>
                     <td class="align_center"><?= date('d/m/Y',strtotime($etat['date_debut']));?></td>
                     <td>
-                        <button type="button" id="<?= $etat['code'].'|'.$etat['nom'];?>" class="badge bg-<?php if($validite_edition == 0) {echo 'secondary';}else {echo 'warning';}?> btn_edit" <?php if($validite_edition == 0) {echo 'disabled';} ?>><i class="bi bi-brush"></i></button>
+                        <button type="button" id="<?= $etat['code'].'|'.$etat['nom'].'|'.$etat['longitude'].'|'.$etat['latitude'].'|'.$etat['gentile'].'|'.$etat['code_monnaie'].'|'.$etat['indicatif_telephonique'];?>" class="badge bg-<?php if($validite_edition == 0) {echo 'secondary';}else {echo 'warning';}?> btn_edit" <?php if($validite_edition == 0) {echo 'disabled';} ?>><i class="bi bi-brush"></i></button>
                     </td>
                     <td>
-                        <button type="button" class="badge bg-dark" data-bs-toggle="modal" data-bs-target="#historiqueModal"><i class="bi bi-clock-history"></i></button>
+                        <button type="button" class="badge bg-dark button_historique" data-bs-toggle="modal" id="<?= $etat['code'];?>|lge" data-bs-target="#historiqueModal"><i class="bi bi-clock-history"></i></button>
                     </td>
                 </tr>
                 <?php
@@ -91,15 +91,13 @@ $devises = $DEVISESMONETAIRES->lister();
             </tbody>
         </table>
         <div class="modal fade" id="historiqueModal" tabindex="-1" aria-labelledby="historiqueModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="historiqueModalLabel"><i class="bi bi-clock-history"></i> Historique des modifications</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
+                    <div class="modal-body" id="div_historique"></div>
                 </div>
             </div>
         </div>
@@ -254,7 +252,7 @@ $devises = $DEVISESMONETAIRES->lister();
                 .addClass('btn-warning')
                 .html('<i>Traitement...</i>');
             $.ajax({
-                url: '../_CONFIGS/Includes/Submits/Parametres/submit_geo_pays.php',
+                url: '../_CONFIGS/Includes/Submits/Parametres/TablesDeValeurs/submit_geo_pays.php',
                 type: 'POST',
                 data: {
                     'code': code,
@@ -347,9 +345,19 @@ $devises = $DEVISESMONETAIRES->lister();
         let this_id = this.id,
             tableau = this_id.split('|'),
             code = tableau[0],
-            libelle = tableau[1];
+            libelle = tableau[1],
+            longitude = tableau[2],
+            latitude = tableau[3],
+            gentile = tableau[4],
+            devise = tableau[5],
+            indicatif = tableau[6];
         $("#code_input").val(code).prop('disabled',true);
-        $("#libelle_input").val(libelle);
+        $("#nom_input").val(libelle);
+        $("#longitude_input").val(longitude);
+        $("#latitude_input").val(latitude);
+        $("#gentile_input").val(gentile);
+        $("#code_devise_input").val(devise);
+        $("#indicatif_input").val(indicatif);
 
 
         $(".card-title").html('Edition de pays');
@@ -365,6 +373,26 @@ $devises = $DEVISESMONETAIRES->lister();
     $("#com").click(function () {
         display_tables_de_valeurs('com');
     });
+    $(".button_historique").click(function () {
+        let this_id = this.id,
+            tableau = this_id.split('|'),
+            donnee = tableau[0],
+            type_donnee = tableau[1];
+        if(donnee && type_donnee) {
+            $.ajax({
+                url: '../_CONFIGS/Includes/Searches/Parametres/search_historique_donnees.php',
+                type: 'POST',
+                data: {
+                    'donnee': donnee,
+                    'type': type_donnee
+                },
+                success: function (data) {
+                    $("#div_historique").html(data);
+                }
+            });
+        }
+    });
+
     $('#historiqueModal').modal({
         show: false,
         backdrop: 'static'

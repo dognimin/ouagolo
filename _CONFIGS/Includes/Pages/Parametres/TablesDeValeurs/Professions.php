@@ -5,7 +5,7 @@ $PROFESSIONS = new PROFESSIONS();
 $professions = $PROFESSIONS->lister();
 $nb_professions = count($professions);
 ?>
-<p class="h4">Catégories socio-professionnelles</p>
+<p class="h4">Professions</p>
 <p class="align_right">
     <button type="button" class="btn btn-primary btn-sm btn_add"><i class="bi bi-plus-square-fill"></i></button>
 </p>
@@ -62,12 +62,12 @@ $nb_professions = count($professions);
                     <td class="align_right"><?= $ligne;?></td>
                     <td><?= $profession['code'];?></td>
                     <td><?= $profession['libelle'];?></td>
-                    <td><?= date('d/m/Y',strtotime($profession['date_debut']));?></td>
+                    <td class="align_center"><?= date('d/m/Y',strtotime($profession['date_debut']));?></td>
                     <td>
                         <button type="button" id="<?= $profession['code'].'|'.$profession['libelle'];?>" class="badge bg-<?php if($validite_edition == 0) {echo 'secondary';}else {echo 'warning';}?> btn_edit" <?php if($validite_edition == 0) {echo 'disabled';} ?>><i class="bi bi-brush"></i></button>
                     </td>
                     <td>
-                        <button type="button" class="badge bg-dark" data-bs-toggle="modal" data-bs-target="#historiqueModal"><i class="bi bi-clock-history"></i></button>
+                        <button type="button" class="badge bg-dark button_historique" data-bs-toggle="modal" id="<?= $profession['code'];?>|prf" data-bs-target="#historiqueModal"><i class="bi bi-clock-history"></i></button>
                     </td>
                 </tr>
                 <?php
@@ -77,15 +77,13 @@ $nb_professions = count($professions);
             </tbody>
         </table>
         <div class="modal fade" id="historiqueModal" tabindex="-1" aria-labelledby="historiqueModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="historiqueModalLabel"><i class="bi bi-clock-history"></i> Historique des modifications</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
+                    <div class="modal-body" id="div_historique"></div>
                 </div>
             </div>
         </div>
@@ -150,7 +148,7 @@ $nb_professions = count($professions);
                 .addClass('btn-warning')
                 .html('<i>Traitement...</i>');
             $.ajax({
-                url: '../_CONFIGS/Includes/Submits/Parametres/submit_profession.php',
+                url: '../_CONFIGS/Includes/Submits/Parametres/TablesDeValeurs/submit_profession.php',
                 type: 'POST',
                 data: {
                     'code': code,
@@ -214,6 +212,26 @@ $nb_professions = count($professions);
         show: false,
         backdrop: 'static'
     });
+    $(".button_historique").click(function () {
+        let this_id = this.id,
+            tableau = this_id.split('|'),
+            donnee = tableau[0],
+            type_donnee = tableau[1];
+        if(donnee && type_donnee) {
+            $.ajax({
+                url: '../_CONFIGS/Includes/Searches/Parametres/search_historique_donnees.php',
+                type: 'POST',
+                data: {
+                    'donnee': donnee,
+                    'type': type_donnee
+                },
+                success: function (data) {
+                    $("#div_historique").html(data);
+                }
+            });
+        }
+    });
+
     $('#tableDeValeurs').DataTable();
 
     $("#export_input").change(function () {

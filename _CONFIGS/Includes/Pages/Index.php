@@ -13,8 +13,13 @@ if($_SESSION) {
                             if($user_mdp['statut'] == 1) {
                                 include "../Menu.php";
                                 ?>
-                                Index
-
+                                <div class="container-xl" id="div_main_page">
+                                    <nav id="nav_breadcrumb" aria-label="breadcrumb">
+                                        <ol class="breadcrumb">
+                                            <li class="breadcrumb-item active"><i class="bi bi-house-door-fill"></i> Accueil</li>
+                                        </ol>
+                                    </nav>
+                                </div>
                                 <?php
                                 echo '<script src="'.JS.'deconnexion_0.js"></script>';
                             }else {

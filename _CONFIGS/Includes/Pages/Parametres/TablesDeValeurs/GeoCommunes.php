@@ -5,6 +5,8 @@ require_once "../../../../Classes/LOCALISATIONSGEOGRAPHIQUES.php";
 $LOCALISATIONSGEOGRAPHIQUES = new LOCALISATIONSGEOGRAPHIQUES();
 $pays = $LOCALISATIONSGEOGRAPHIQUES->lister_pays();
 $communes = $LOCALISATIONSGEOGRAPHIQUES->lister_communes(NULL);
+$regions = $LOCALISATIONSGEOGRAPHIQUES->lister_regions(NULL);
+$departements = $LOCALISATIONSGEOGRAPHIQUES->lister_regions(NULL);
 $nb_commune = count($communes);
 ?>
 
@@ -42,7 +44,7 @@ $nb_commune = count($communes);
     }else {
         include "../../_Forms/form_export.php";
         ?>
-        <table class="table table-bordered table-hover table-sm" id="tableDeValeurs">
+        <table class="table table-bordered table-hover table-sm table-striped" id="tableDeValeurs">
             <thead class="bg-info">
             <tr>
                 <th width="5">N°</th>
@@ -71,18 +73,18 @@ $nb_commune = count($communes);
                 ?>
                 <tr>
                     <td class="align_right"><?= $ligne;?></td>
-                    <td><?= $commune['nom_pays'];?></td>
-                    <td><?= $commune['nom_region'];?></td>
-                    <td><?= $commune['nom_departement'];?></td>
+                    <td><?= $commune['code_pays'];?></td>
+                    <td><?= $commune['code_region'];?></td>
+                    <td><?= $commune['code_departement'];?></td>
                     <td><?= $commune['code'];?></td>
                     <td><?= $commune['nom'];?></td>
-                    <td><a href=""><?= $commune['latitude'].','.$commune['longitude'];?></a></td>
-                    <td><?= date('d/m/Y',strtotime($commune['date_debut']));?></td>
+                    <td class="align_right"><a href=""><?= $commune['latitude'].','.$commune['longitude'];?></a></td>
+                    <td class="align_center"><?= date('d/m/Y',strtotime($commune['date_debut']));?></td>
                     <td>
-                        <button type="button" id="<?= $commune['code'].'|'.$commune['nom'];?>" class="badge bg-<?php if($validite_edition == 0) {echo 'secondary';}else {echo 'warning';}?> btn_edit" <?php if($validite_edition == 0) {echo 'disabled';} ?>><i class="bi bi-brush"></i></button>
+                        <button type="button" id="<?= $commune['code'].'|'.$commune['nom'].'|'.$commune['latitude'].'|'.$commune['longitude'].'|'.$commune['code_pays'].'|'.$commune['code_region'].'|'.$commune['code_departement'];?>" class="badge bg-<?php if($validite_edition == 0) {echo 'secondary';}else {echo 'warning';}?> btn_edit" <?php if($validite_edition == 0) {echo 'disabled';} ?>><i class="bi bi-brush"></i></button>
                     </td>
                     <td>
-                        <button type="button" class="badge bg-dark" data-bs-toggle="modal" data-bs-target="#historiqueModal"><i class="bi bi-clock-history"></i></button>
+                        <button type="button" class="badge bg-dark button_historique" data-bs-toggle="modal" id="<?= $commune['code'];?>|com" data-bs-target="#historiqueModal"><i class="bi bi-clock-history"></i></button>
                     </td>
                 </tr>
                 <?php
@@ -92,15 +94,13 @@ $nb_commune = count($communes);
             </tbody>
         </table>
         <div class="modal fade" id="historiqueModal" tabindex="-1" aria-labelledby="historiqueModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="historiqueModalLabel"><i class="bi bi-clock-history"></i> Historique des modifications</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
+                    <div class="modal-body" id="div_historique"></div>
                 </div>
             </div>
         </div>
@@ -314,7 +314,7 @@ $nb_commune = count($communes);
                 .addClass('btn-warning')
                 .html('<i>Traitement...</i>');
             $.ajax({
-                url: '../_CONFIGS/Includes/Submits/Parametres/submit_geo_commune.php',
+                url: '../_CONFIGS/Includes/Submits/Parametres/TablesDeValeurs/submit_geo_commune.php',
                 type: 'POST',
                 data: {
                     'code_departement': code_departement,
@@ -411,9 +411,65 @@ $nb_commune = count($communes);
         let this_id = this.id,
             tableau = this_id.split('|'),
             code = tableau[0],
+            latitude = tableau[2],
+            longitude = tableau[3],
+            pays = tableau[4],
+            region = tableau[5],
+            departement = tableau[6],
             libelle = tableau[1];
+        $.ajax({
+            url: '../_CONFIGS/Includes/Searches/search_localisation.php',
+            type: 'post',
+            data: {
+                'code_region': region,
+                'code_departement': departement
+            },
+            dataType: 'json',
+            success: function(json) {
+                $("#button_enregistrer").prop('disabled', false)
+                    .removeClass('btn-warning')
+                    .addClass('btn-primary')
+                    .html('<i class="bi bi-save"></i> Enregistrer');
+
+                $.each(json, function(index, value) {
+                    if (index === departement){
+                        $("#code_departement_input").append('<option value="'+ index +'" selected >'+ value +'</option>');
+                    }else{
+                        $("#code_departement_input").append('<option value="'+ index +'">'+ value +'</option>');
+                    }
+                });
+            }
+        });
+        $.ajax({
+            url: '../_CONFIGS/Includes/Searches/search_localisation.php',
+            type: 'post',
+            data: {
+                'code_pays': pays
+            },
+            dataType: 'json',
+            success: function(json) {
+                $("#button_enregistrer").prop('disabled', false)
+                    .removeClass('btn-warning')
+                    .addClass('btn-primary')
+                    .html('<i class="bi bi-save"></i> Enregistrer');
+
+                $.each(json, function(index, value) {
+                    if (index === region){
+                        $("#code_region_input").append('<option value="'+ index +'" selected >'+ value +'</option>');
+                    }else{
+                        $("#code_region_input").append('<option value="'+ index +'">'+ value +'</option>');
+                    }
+                });
+            }
+        });
+
         $("#code_input").val(code).prop('disabled',true);
-        $("#libelle_input").val(libelle);
+        $("#nom_input").val(libelle);
+        $("#latitude_input").val(latitude);
+        $("#longitude_input").val(longitude);
+        $("#code_pays_input").val(pays);
+        $("#code_region_input").val(region);
+        $("#code_departement_input").val(departement);
 
 
         $(".card-title").html('Edition de commune');
@@ -428,6 +484,25 @@ $nb_commune = count($communes);
     });
     $("#com").click(function () {
         display_tables_de_valeurs('com');
+    });
+    $(".button_historique").click(function () {
+        let this_id = this.id,
+            tableau = this_id.split('|'),
+            donnee = tableau[0],
+            type_donnee = tableau[1];
+        if(donnee && type_donnee) {
+            $.ajax({
+                url: '../_CONFIGS/Includes/Searches/Parametres/search_historique_donnees.php',
+                type: 'POST',
+                data: {
+                    'donnee': donnee,
+                    'type': type_donnee
+                },
+                success: function (data) {
+                    $("#div_historique").html(data);
+                }
+            });
+        }
     });
 
     $('#historiqueModal').modal({

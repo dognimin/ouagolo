@@ -6,9 +6,10 @@
             <select class="form-select form-select-sm" id="code_pays_input" aria-label=".form-select-sm" aria-describedby="codePaysHelp">
                 <option value="">Sélectionnez</option>
                 <?php
-                foreach ($pays as $tbpays) {
-                    echo '<option value="'.$tbpays['code'].'">'.$tbpays['nom'].'</option>';
-                }
+                foreach ($pays as $tbpays) { ?>
+
+                    <option value="<?= $tbpays['code'] ?>"> <?= $tbpays['nom'] ?></option>;
+               <?php }
                 ?>
             </select>
             <div id="codePaysHelp" class="form-text"></div>
@@ -16,15 +17,16 @@
     </div>
     <div class="row">
         <div class="col-sm-6">
-            <label for="code_pays_input" class="form-label">Regions</label>
-            <select class="form-select form-select-sm" id="code_region_input" aria-label=".form-select-sm" aria-describedby="codePaysHelp">
+            <label for="code_region_input" class="form-label">Regions</label>
+            <select class="form-select form-select-sm" id="code_region_input" aria-label=".form-select-sm" aria-describedby="codeRegionHelp">
                 <option value="">Sélectionnez</option>
+
             </select>
             <div id="codeRegionHelp" class="form-text"></div>
         </div>
         <div class="col-sm-6">
             <label for="code_departement_input" class="form-label">Departements</label>
-            <select class="form-select form-select-sm" id="code_departement_input" aria-label=".form-select-sm" aria-describedby="codePaysHelp">
+            <select class="form-select form-select-sm" id="code_departement_input" aria-label=".form-select-sm" aria-describedby="codeDepartHelp">
                 <option value="">Sélectionnez</option>
             </select>
             <div id="codeDepartHelp" class="form-text"></div>

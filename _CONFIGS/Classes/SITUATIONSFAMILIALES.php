@@ -15,7 +15,7 @@ class SITUATIONSFAMILIALES extends BDD
         if($a->errorCode() == "00000"){
             return array(
                 "success" => true,
-                "message" => 'Enregistrement effectue avec succès'
+                "message" => 'Enregistrement effectué avec succès'
             );
         }else{
             return array(
@@ -31,7 +31,7 @@ class SITUATIONSFAMILIALES extends BDD
         if ($a->errorCode() == "00000"){
             return array(
                 "success" => true,
-                "messages" => 'Enregistrement effectue avec succès.'
+                "messages" => 'Enregistrement effectué avec succès.'
             );
         }else{
             return array(
@@ -98,5 +98,29 @@ ORDER BY A.situation_familiale_libelle
             $json = $this->ajouter($code, $libelle, $user);
         }
         return $json;
+    }
+
+    public function lister_historique($code) {
+        $query = "
+SELECT 
+       A.situation_familiale_code AS code, 
+       A.situation_familiale_libelle AS libelle, 
+       A.situation_familiale_date_debut AS date_debut, 
+       A.situation_familiale_date_fin AS date_fin, 
+       A.date_creation, 
+       A.utilisateur_id_creation, 
+       B.utilisateur_nom AS nom,
+       B.utilisateur_prenoms AS prenoms
+       
+FROM 
+     tb_ref_situations_familiales A JOIN tb_utilisateurs B 
+         ON 
+             A.utilisateur_id_creation = B.utilisateur_id AND A.situation_familiale_code LIKE ?
+ORDER BY 
+         A.date_creation DESC
+";
+        $a = $this->bdd->prepare($query);
+        $a->execute(array('%'.$code.'%'));
+        return $a->fetchAll();
     }
 }

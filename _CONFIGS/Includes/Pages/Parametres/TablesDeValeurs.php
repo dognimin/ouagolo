@@ -16,14 +16,15 @@ if($_SESSION) {
                             $TABLESDEVALEURS = new TABLESDEVALEURS();
                             $tables = $TABLESDEVALEURS->lister();
                             ?>
-                            <nav id="nav_breadcrumb" style="--bs-breadcrumb-divider: '>'" aria-label="breadcrumb">
-                                <ol class="breadcrumb">
-                                    <li class="breadcrumb-item"><a href="<?= URL;?>">Accueil</a></li>
-                                    <li class="breadcrumb-item"><a href="<?= URL.'parametres/';?>">Paramètres</a></li>
-                                    <li class="breadcrumb-item active" aria-current="page">Tables de valeurs</li>
-                                </ol>
-                            </nav>
                             <div class="container-xl" id="div_main_page">
+                                <nav id="nav_breadcrumb" aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="<?= URL;?>"><i class="bi bi-house-door-fill"></i> Accueil</a></li>
+                                        <li class="breadcrumb-item"><a href="<?= URL.'parametres/';?>"><i class="bi bi-gear-wide-connected"></i> Paramètres</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page"><i class="bi bi-award"></i> Tables de valeurs</li>
+                                    </ol>
+                                </nav>
+                                <p class="p_page_titre h4">Tables de valeurs</p>
                                 <div class="row">
                                     <div class="col-sm-3" id="div_sidebar">
                                         <?php include "../_Forms/form_tables_de_valeurs.php";?>

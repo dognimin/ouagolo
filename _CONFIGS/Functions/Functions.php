@@ -18,6 +18,24 @@ function salutations() {
     return $salutations;
 }
 
+function acronyme($entite, $nombre) {
+    $words = explode(" ", $entite);
+    $acronym = "";
+
+    $ligne = 1;
+    foreach ($words as $w) {
+        if($nombre >= 0) {
+            if($ligne <= $nombre) {
+                $acronym .= $w[0];
+            }
+        }else {
+            $acronym .= $w[0];
+        }
+        $ligne++;
+    }
+    return $acronym;
+}
+
 function envoi_mail($path_deep, $smtp_host, $smtp_username, $smtp_password, $smtp_port, $objet, $message, $expediteur, $destinataires) {
     require $path_deep.'vendor/autoload.php';
     $mail = new PHPMailer(true);
@@ -68,8 +86,4 @@ function envoi_mail($path_deep, $smtp_host, $smtp_username, $smtp_password, $smt
         );
     }
     return $json;
-}
-
-function reinitialisation_mot_de_passe() {
-
 }

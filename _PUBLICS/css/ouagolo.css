@@ -31,13 +31,56 @@
     padding-left: 10px;
     padding-right: 10px;
     background-color: #272b3f;
+    --bs-breadcrumb-divider: '/';
+}
+#nav_breadcrumb a {
+    color: #0083c4;
+    text-decoration: none;
+}
+#nav_breadcrumb a:hover {
+    color: #fe0000;
+    text-decoration: none;
 }
 #div_main_page {
     width: 100%;
     color: #000000;
     padding: 10px;
+    margin-top: 45px;
     min-height: 80vh;
     background-color: #f8f9fa;
+}
+.p_page_titre {
+    border-bottom: 1px dotted #000000;
+    padding-bottom: 20px;
+}
+#div_profil p {
+    width: 100%;
+    margin: 10px;
+}
+#div_profil p small {
+    color: #808080;
+}
+#div_profil p .b_photo button{
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    margin: auto;
+    padding: 10px;
+    display: block;
+    font-size: 5rem;
+    line-height: 100px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+
+}
+#div_profil p .b_photo button:hover{
+    color: #f8f9fa;
+    background-color: #000000;
+
+}
+#image_photo_profil {
+    width: 100%;
+    border-radius: 50%;
 }
 .breadcrumb {
     line-height: 20px;
@@ -47,6 +90,62 @@
     display: block;
     background-color: rgba(39,43,63,0.2);
 }
-#div_form {
+#div_utilisateur,
+#div_form,
+#div_ets_coordonnees_form,
+#div_ets_ps_form,
+#div_ets_agents_form,
+#div_ets_service_form,
+#div_user_coordonnees_form,
+#div_user_groupe_sanguin_form {
     display: none;
+}
+#div_resultats{
+    height: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    overflow-x: auto;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    border: 1px solid #CCCCCC;
+}
+#div_utilisateur_entete{
+    height: auto;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f8f9fa;
+    box-shadow: 1px 1px 1px 1px #d2d1d1;
+}
+#div_utilisateur_info{
+    height: auto;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    overflow-x: auto;
+    overflow-y: auto;
+    background-color: #f8f9fa;
+    box-shadow: 1px 1px 1px 1px #d2d1d1;
+}
+#profile{
+    border-right: 1px solid #d2d1d1;
+    height: auto;
+    align-content: center;
+
+}
+.div_boxes {
+    margin-bottom: 5px;
+}
+#p_groupe_sanguin {
+    z-index: 1;
+    font-size: 10rem;
+    width: fit-content;
+    text-align: right;
+    padding-right: 40px;
+    color: rgba(24,131,81,0.5);
+    position: absolute !important;
+}
+.bg-indigo {
+    color: #f8f9fa;
+    background-color: #272b3f !important;
 }

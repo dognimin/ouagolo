@@ -3,6 +3,7 @@ require_once "../../../../Classes/UTILISATEURS.php";
 require_once "../../../../Classes/LOCALISATIONSGEOGRAPHIQUES.php";
 $LOCALISATIONSGEOGRAPHIQUES = new LOCALISATIONSGEOGRAPHIQUES();
 $departements = $LOCALISATIONSGEOGRAPHIQUES->lister_departements(null);
+$regions = $LOCALISATIONSGEOGRAPHIQUES->lister_regions(null);
 $pays = $LOCALISATIONSGEOGRAPHIQUES->lister_pays();
 $nb_departement = count($departements);
 ?>
@@ -39,7 +40,7 @@ $nb_departement = count($departements);
     }else {
         include "../../_Forms/form_export.php";
         ?>
-        <table class="table table-bordered table-hover table-sm" id="tableDeValeurs">
+        <table class="table table-bordered table-hover table-sm table-striped" id="tableDeValeurs">
             <thead class="bg-info">
             <tr>
                 <th width="5">N°</th>
@@ -67,17 +68,17 @@ $nb_departement = count($departements);
                 ?>
                 <tr>
                     <td class="align_right"><?= $ligne;?></td>
-                    <td><?= $departement['nom_pays'];?></td>
-                    <td><?= $departement['nom_region'];?></td>
+                    <td><?= $departement['code_pays'];?></td>
+                    <td><?= $departement['code_region'];?></td>
                     <td><?= $departement['code'];?></td>
                     <td><?= $departement['nom'];?></td>
-                    <td><a href=""><?= $departement['latitude'].','.$departement['longitude'];?></a></td>
-                    <td><?= date('d/m/Y',strtotime($departement['date_debut']));?></td>
+                    <td class="align_right"><a href=""><?= $departement['latitude'].','.$departement['longitude'];?></a></td>
+                    <td class="align_center"><?= date('d/m/Y',strtotime($departement['date_debut']));?></td>
                     <td>
-                        <button type="button" id="<?= $departement['code'].'|'.$departement['nom'];?>" class="badge bg-<?php if($validite_edition == 0) {echo 'secondary';}else {echo 'warning';}?> btn_edit" <?php if($validite_edition == 0) {echo 'disabled';} ?>><i class="bi bi-brush"></i></button>
+                        <button type="button" id="<?= $departement['code'].'|'.$departement['nom'].'|'.$departement['latitude'].'|'.$departement['longitude'].'|'.$departement['region'].'|'.$departement['code_pays'];?>" class="badge bg-<?php if($validite_edition == 0) {echo 'secondary';}else {echo 'warning';}?> btn_edit" <?php if($validite_edition == 0) {echo 'disabled';} ?>><i class="bi bi-brush"></i></button>
                     </td>
                     <td>
-                        <button type="button" class="badge bg-dark" data-bs-toggle="modal" data-bs-target="#historiqueModal"><i class="bi bi-clock-history"></i></button>
+                        <button type="button" class="badge bg-dark button_historique" data-bs-toggle="modal" id="<?= $departement['code'];?>|dep" data-bs-target="#historiqueModal"><i class="bi bi-clock-history"></i></button>
                     </td>
                 </tr>
                 <?php
@@ -87,15 +88,13 @@ $nb_departement = count($departements);
             </tbody>
         </table>
         <div class="modal fade" id="historiqueModal" tabindex="-1" aria-labelledby="historiqueModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="historiqueModalLabel"><i class="bi bi-clock-history"></i> Historique des modifications</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        ...
-                    </div>
+                    <div class="modal-body" id="div_historique"></div>
                 </div>
             </div>
         </div>
@@ -113,7 +112,7 @@ $nb_departement = count($departements);
     $(".btn_add").click(function () {
         $("#div_datas").hide();
         $("#div_form").slideDown();
-        $(".card-title").html('Nouveau Departement');
+        $(".card-title").html('Nouveau Département');
         return false;
     });
 
@@ -260,7 +259,7 @@ $nb_departement = count($departements);
                 .addClass('btn-warning')
                 .html('<i>Traitement...</i>');
             $.ajax({
-                url: '../_CONFIGS/Includes/Submits/Parametres/submit_geo_departement.php',
+                url: '../_CONFIGS/Includes/Submits/Parametres/TablesDeValeurs/submit_geo_departement.php',
                 type: 'POST',
                 data: {
                     'code_region': code_region,
@@ -339,12 +338,40 @@ $nb_departement = count($departements);
         let this_id = this.id,
             tableau = this_id.split('|'),
             code = tableau[0],
+            longitude = tableau[2],
+            latitude = tableau[3],
+            pays = tableau[5],
+            region = tableau[4],
             libelle = tableau[1];
+        $.ajax({
+            url: '../_CONFIGS/Includes/Searches/search_localisation.php',
+            type: 'post',
+            data: {
+                'code_pays': pays
+            },
+            dataType: 'json',
+            success: function(json) {
+                $("#button_enregistrer").prop('disabled', false)
+                    .removeClass('btn-warning')
+                    .addClass('btn-primary')
+                    .html('<i class="bi bi-save"></i> Enregistrer');
+
+                $.each(json, function(index, value) {
+                    if (index === region){
+                        $("#code_region_input").append('<option value="'+ index +'" selected >'+ value +'</option>');
+                    }else{
+                        $("#code_region_input").append('<option value="'+ index +'">'+ value +'</option>');
+                    }
+                });
+            }
+        });
         $("#code_input").val(code).prop('disabled',true);
-        $("#libelle_input").val(libelle);
+        $("#nom_input").val(libelle);
+        $("#longitude_input").val(longitude);
+        $("#latitude_input").val(latitude);
+        $("#code_pays_input").val(pays);
+        $(".card-title").html('Edition d\'un département');
 
-
-        $(".card-title").html('Edition de departememnt');
 
     });
 
@@ -356,6 +383,25 @@ $nb_departement = count($departements);
      });
      $("#com").click(function () {
          display_tables_de_valeurs('com');
+    });
+    $(".button_historique").click(function () {
+        let this_id = this.id,
+            tableau = this_id.split('|'),
+            donnee = tableau[0],
+            type_donnee = tableau[1];
+        if(donnee && type_donnee) {
+            $.ajax({
+                url: '../_CONFIGS/Includes/Searches/Parametres/search_historique_donnees.php',
+                type: 'POST',
+                data: {
+                    'donnee': donnee,
+                    'type': type_donnee
+                },
+                success: function (data) {
+                    $("#div_historique").html(data);
+                }
+            });
+        }
     });
 
     $('#historiqueModal').modal({
