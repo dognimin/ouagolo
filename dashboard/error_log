@@ -1,0 +1,3 @@
+[14-Jun-2021 22:35:10 Africa/Abidjan] PHP Warning:  Use of undefined constant TITLE - assumed 'TITLE' (this will throw an Error in a future version of PHP) in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_1.php on line 26
+[14-Jun-2021 22:35:12 Africa/Abidjan] PHP Warning:  Use of undefined constant TITLE - assumed 'TITLE' (this will throw an Error in a future version of PHP) in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_1.php on line 26
+[14-Jun-2021 22:37:32 Africa/Abidjan] PHP Warning:  Use of undefined constant TITLE - assumed 'TITLE' (this will throw an Error in a future version of PHP) in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_1.php on line 26

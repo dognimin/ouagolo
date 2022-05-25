@@ -1,0 +1,14 @@
+[25-Nov-2021 15:29:35 Africa/Abidjan] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function MEDICAMENTS::lister_sous_groupes(), 0 passed in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MEDICAMENTS.php on line 1791 and exactly 1 expected in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MEDICAMENTS.php:1818
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MEDICAMENTS.php(1791): MEDICAMENTS->lister_sous_groupes()
+#1 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MEDICAMENTS.php(1746): MEDICAMENTS->ajouter_sous_groupe()
+#2 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Submits/Parametres/Referentiels/Medicaments/submit_sous_groupe.php(19): MEDICAMENTS->editer_sous_groupe()
+#3 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MEDICAMENTS.php on line 1818
+[25-Nov-2021 15:29:57 Africa/Abidjan] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function MEDICAMENTS::lister_sous_groupes(), 0 passed in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MEDICAMENTS.php on line 1791 and exactly 1 expected in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MEDICAMENTS.php:1818
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MEDICAMENTS.php(1791): MEDICAMENTS->lister_sous_groupes()
+#1 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MEDICAMENTS.php(1746): MEDICAMENTS->ajouter_sous_groupe()
+#2 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Submits/Parametres/Referentiels/Medicaments/submit_sous_groupe.php(19): MEDICAMENTS->editer_sous_groupe()
+#3 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MEDICAMENTS.php on line 1818

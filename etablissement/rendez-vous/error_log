@@ -1,0 +1,10 @@
+[16-Nov-2021 20:39:40 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/rendez-vous/index.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[16-Nov-2021 20:47:59 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/rendez-vous/index.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32

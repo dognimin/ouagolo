@@ -1,0 +1,5 @@
+[25-Nov-2021 15:27:10 Africa/Abidjan] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function MEDICAMENTS::lister_sous_groupes(), 0 passed in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Parametres/Referentiels/Medicaments/SousGroupes.php on line 6 and exactly 1 expected in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MEDICAMENTS.php:1818
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Parametres/Referentiels/Medicaments/SousGroupes.php(6): MEDICAMENTS->lister_sous_groupes()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MEDICAMENTS.php on line 1818

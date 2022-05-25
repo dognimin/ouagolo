@@ -1,0 +1,18 @@
+#div_loader {
+    width: 100%;
+    z-index: 999;
+    height: 90vh;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+#div_loader p {
+    display: table-cell;
+    border-radius: 999px;
+    vertical-align: middle;
+
+    -webkit-animation: spin 2s linear infinite; /* Chrome, Opera 15+, Safari 5+ */
+    animation: spin 2s linear infinite; /* Chrome, Firefox 16+, IE 10+, Opera */
+    z-index: 1001;
+}

@@ -1,0 +1,5 @@
+[18-Nov-2021 13:52:02 UTC] PHP Warning:  require_once(../../../Classes/UTILISATEURS.php): Failed to open stream: No such file or directory in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Searches/Etablissement/Dashboard/html/search_nombre_patients.php on line 3
+[18-Nov-2021 13:52:02 UTC] PHP Fatal error:  Uncaught Error: Failed opening required '../../../Classes/UTILISATEURS.php' (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Searches/Etablissement/Dashboard/html/search_nombre_patients.php:3
+Stack trace:
+#0 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Searches/Etablissement/Dashboard/html/search_nombre_patients.php on line 3

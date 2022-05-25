@@ -1,0 +1,327 @@
+[24-Nov-2021 14:12:59 Africa/Abidjan] PHP Warning:  Undefined variable $payss in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_fournisseur.php on line 25
+[24-Nov-2021 14:12:59 Africa/Abidjan] PHP Warning:  foreach() argument must be of type array|object, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_fournisseur.php on line 25
+[24-Nov-2021 14:14:29 Africa/Abidjan] PHP Warning:  Undefined variable $payss in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_fournisseur.php on line 25
+[24-Nov-2021 14:14:29 Africa/Abidjan] PHP Warning:  foreach() argument must be of type array|object, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_fournisseur.php on line 25
+[24-Nov-2021 14:16:02 Africa/Abidjan] PHP Warning:  Undefined variable $payss in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_fournisseur.php on line 25
+[24-Nov-2021 14:16:02 Africa/Abidjan] PHP Warning:  foreach() argument must be of type array|object, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_fournisseur.php on line 25
+[24-Nov-2021 14:16:48 Africa/Abidjan] PHP Warning:  Undefined variable $payss in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_fournisseur.php on line 25
+[24-Nov-2021 14:16:48 Africa/Abidjan] PHP Warning:  foreach() argument must be of type array|object, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_fournisseur.php on line 25
+[24-Nov-2021 14:22:33 Africa/Abidjan] PHP Warning:  Undefined variable $payss in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_produit.php on line 24
+[24-Nov-2021 14:22:33 Africa/Abidjan] PHP Warning:  foreach() argument must be of type array|object, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_produit.php on line 24
+[27-Nov-2021 08:25:59 Africa/Abidjan] PHP Warning:  Undefined variable $fournisseurs in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_etablissement_commande.php on line 14
+[27-Nov-2021 08:25:59 Africa/Abidjan] PHP Warning:  foreach() argument must be of type array|object, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_etablissement_commande.php on line 14
+[28-Nov-2021 13:53:46 Africa/Abidjan] PHP Warning:  Undefined property: ETABLISSEMENTS::$lis in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 38
+[28-Nov-2021 13:54:04 Africa/Abidjan] PHP Warning:  Undefined property: ETABLISSEMENTS::$lis in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 38
+[28-Nov-2021 13:54:32 Africa/Abidjan] PHP Warning:  Undefined property: ETABLISSEMENTS::$lis in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 38
+[28-Nov-2021 13:55:51 Africa/Abidjan] PHP Warning:  Undefined property: ETABLISSEMENTS::$lis in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 38
+[28-Nov-2021 13:56:04 Africa/Abidjan] PHP Warning:  Undefined property: ETABLISSEMENTS::$lis in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 38
+[28-Nov-2021 13:56:57 Africa/Abidjan] PHP Warning:  Undefined property: ETABLISSEMENTS::$lis in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 38
+[28-Nov-2021 14:03:45 Africa/Abidjan] PHP Warning:  Undefined property: ETABLISSEMENTS::$lis in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 38
+[28-Nov-2021 14:04:05 Africa/Abidjan] PHP Warning:  Undefined property: ETABLISSEMENTS::$lis in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 38
+[28-Nov-2021 14:04:19 Africa/Abidjan] PHP Warning:  Undefined property: ETABLISSEMENTS::$lis in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 38
+[28-Nov-2021 14:13:06 Africa/Abidjan] PHP Fatal error:  Uncaught TypeError: Cannot access offset of type string on string in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php:116
+Stack trace:
+#0 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 116
+[28-Nov-2021 14:15:27 Africa/Abidjan] PHP Warning:  Undefined array key "prix_unitiare" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 118
+[28-Nov-2021 14:15:27 Africa/Abidjan] PHP Warning:  Undefined array key "prix_unitiare" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 120
+[28-Nov-2021 14:15:27 Africa/Abidjan] PHP Warning:  Undefined array key "prix_unitiare" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 118
+[28-Nov-2021 14:15:27 Africa/Abidjan] PHP Warning:  Undefined array key "prix_unitiare" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 120
+[28-Nov-2021 14:15:47 Africa/Abidjan] PHP Warning:  Undefined array key "prix_unitiaire" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 118
+[28-Nov-2021 14:15:47 Africa/Abidjan] PHP Warning:  Undefined array key "prix_unitiaire" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 120
+[28-Nov-2021 14:15:47 Africa/Abidjan] PHP Warning:  Undefined array key "prix_unitiaire" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 118
+[28-Nov-2021 14:15:47 Africa/Abidjan] PHP Warning:  Undefined array key "prix_unitiaire" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 120
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 126
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 131
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[28-Nov-2021 15:25:51 Africa/Abidjan] PHP Warning:  Undefined array key "quantite" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php on line 136
+[30-Nov-2021 11:42:57 Africa/Abidjan] PHP Warning:  Undefined variable $fournisseurs in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_etablissement_commande.php on line 14
+[30-Nov-2021 11:42:57 Africa/Abidjan] PHP Warning:  foreach() argument must be of type array|object, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_etablissement_commande.php on line 14
+[30-Nov-2021 11:47:50 Africa/Abidjan] PHP Warning:  include(../../_Forms/form_search_stock.php): Failed to open stream: No such file or directory in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Stock.php on line 45
+[30-Nov-2021 11:47:50 Africa/Abidjan] PHP Warning:  include(): Failed opening '../../_Forms/form_search_stock.php' for inclusion (include_path='.:/opt/alt/php80/usr/share/pear:/opt/alt/php80/usr/share/php:/usr/share/pear:/usr/share/php') in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Stock.php on line 45
+[30-Nov-2021 11:47:50 Africa/Abidjan] PHP Warning:  Undefined variable $fournisseurs in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_etablissement_commande.php on line 14
+[30-Nov-2021 11:47:50 Africa/Abidjan] PHP Warning:  foreach() argument must be of type array|object, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_etablissement_commande.php on line 14
+[30-Nov-2021 11:48:02 Africa/Abidjan] PHP Warning:  Undefined variable $fournisseurs in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_etablissement_commande.php on line 14
+[30-Nov-2021 11:48:02 Africa/Abidjan] PHP Warning:  foreach() argument must be of type array|object, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_etablissement_commande.php on line 14
+[02-Dec-2021 13:41:01 Africa/Abidjan] PHP Warning:  Undefined variable $montant_patient in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_pharmacie_vente.php on line 202
+[02-Dec-2021 13:41:01 Africa/Abidjan] PHP Warning:  Undefined variable $montant_patient in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_pharmacie_vente.php on line 220
+[02-Dec-2021 13:41:01 Africa/Abidjan] PHP Warning:  Undefined variable $types_reglements in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_pharmacie_vente.php on line 230
+[02-Dec-2021 13:41:01 Africa/Abidjan] PHP Warning:  foreach() argument must be of type array|object, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_pharmacie_vente.php on line 230
+[02-Dec-2021 13:42:40 Africa/Abidjan] PHP Warning:  Undefined variable $types_reglements in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_pharmacie_vente.php on line 212
+[02-Dec-2021 13:42:40 Africa/Abidjan] PHP Warning:  foreach() argument must be of type array|object, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_pharmacie_vente.php on line 212
+[02-Dec-2021 13:43:52 Africa/Abidjan] PHP Warning:  Undefined variable $types_reglements in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_pharmacie_vente.php on line 212
+[02-Dec-2021 13:43:52 Africa/Abidjan] PHP Warning:  foreach() argument must be of type array|object, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_pharmacie_vente.php on line 212
+[02-Dec-2021 16:49:20 Africa/Abidjan] PHP Warning:  Undefined array key "code_vente" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Ventes.php on line 82
+[02-Dec-2021 16:52:41 Africa/Abidjan] PHP Warning:  Undefined array key "montant_remise" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Ventes.php on line 92
+[12-Dec-2021 00:25:51 Africa/Abidjan] PHP Warning:  Undefined variable $nb_modules in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 113
+[12-Dec-2021 00:25:51 Africa/Abidjan] PHP Warning:  Undefined variable $modules in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 121
+[12-Dec-2021 00:25:51 Africa/Abidjan] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php:121
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php(121): in_array()
+#1 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Index.php(34): include('/home/techouse/...')
+#2 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 121
+[12-Dec-2021 00:25:55 Africa/Abidjan] PHP Warning:  Undefined variable $nb_modules in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 113
+[12-Dec-2021 00:25:55 Africa/Abidjan] PHP Warning:  Undefined variable $modules in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 121
+[12-Dec-2021 00:25:55 Africa/Abidjan] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php:121
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php(121): in_array()
+#1 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Index.php(34): include('/home/techouse/...')
+#2 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 121
+[12-Dec-2021 00:26:46 Africa/Abidjan] PHP Warning:  Undefined variable $nb_modules in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 113
+[12-Dec-2021 00:26:46 Africa/Abidjan] PHP Warning:  Undefined variable $modules in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 121
+[12-Dec-2021 00:26:46 Africa/Abidjan] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php:121
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php(121): in_array()
+#1 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Index.php(34): include('/home/techouse/...')
+#2 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 121
+[12-Dec-2021 00:39:03 Africa/Abidjan] PHP Warning:  Undefined variable $nb_modules in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 113
+[12-Dec-2021 00:39:03 Africa/Abidjan] PHP Warning:  Undefined variable $modules in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 121
+[12-Dec-2021 00:39:03 Africa/Abidjan] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php:121
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php(121): in_array()
+#1 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Commandes.php(34): include('/home/techouse/...')
+#2 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 121
+[12-Dec-2021 01:19:13 Africa/Abidjan] PHP Warning:  Undefined variable $nb_modules in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 113
+[12-Dec-2021 01:19:13 Africa/Abidjan] PHP Warning:  Undefined variable $modules in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 121
+[12-Dec-2021 01:19:13 Africa/Abidjan] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php:121
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php(121): in_array()
+#1 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Pharmacie/Ventes.php(36): include('/home/techouse/...')
+#2 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 121

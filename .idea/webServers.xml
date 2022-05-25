@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1838f54d-a47b-4ba9-b0a0-ae1e3fbe344e" name="techouse_svr" url="http://159.203.18.87">
+        <fileTransfer rootFolder="/projets/ouagolo/" host="159.203.18.87" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

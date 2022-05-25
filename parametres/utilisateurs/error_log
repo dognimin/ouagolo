@@ -1,0 +1,1 @@
+[14-Jun-2021 22:11:52 Africa/Abidjan] PHP Warning:  Use of undefined constant TITLE - assumed 'TITLE' (this will throw an Error in a future version of PHP) in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 26

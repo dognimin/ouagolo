@@ -1,0 +1,70 @@
+[16-Nov-2021 18:39:22 Africa/Abidjan] PHP Fatal error:  Uncaught Exception: Le mois 13 n'est pas valide. in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MONTH.php:24
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php(26): MONTH->__construct()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MONTH.php on line 24
+[16-Nov-2021 18:46:18 Africa/Abidjan] PHP Fatal error:  Uncaught TypeError: MONTH::getWeeks(): Return value must be of type int, none returned in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MONTH.php:36
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php(48): MONTH->getWeeks()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MONTH.php on line 36
+[16-Nov-2021 18:46:40 Africa/Abidjan] PHP Fatal error:  Uncaught TypeError: MONTH::getWeeks(): Return value must be of type int, none returned in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MONTH.php:36
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php(48): MONTH->getWeeks()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/MONTH.php on line 36
+[17-Nov-2021 11:48:10 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Object of class DateTime could not be converted to string in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php:78
+Stack trace:
+#0 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 78
+[17-Nov-2021 23:05:00 Africa/Abidjan] PHP Warning:  Undefined array key "annee" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 39
+[17-Nov-2021 23:09:40 Africa/Abidjan] PHP Warning:  Undefined array key "annee" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 39
+[17-Nov-2021 23:10:54 Africa/Abidjan] PHP Warning:  Undefined array key "annee" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 39
+[17-Nov-2021 23:11:42 Africa/Abidjan] PHP Warning:  Undefined array key "annee" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 39
+[17-Nov-2021 23:14:29 Africa/Abidjan] PHP Warning:  Undefined array key 0 in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:14:29 Africa/Abidjan] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php:80
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php(80): in_array()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:20:49 Africa/Abidjan] PHP Fatal error:  Uncaught ArgumentCountError: array_slice() expects at least 2 arguments, 1 given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php:80
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php(80): array_slice()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:21:32 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 80
+[17-Nov-2021 23:22:52 UTC] PHP Parse error:  Unmatched '}' in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/RendezVous/Index.php on line 171

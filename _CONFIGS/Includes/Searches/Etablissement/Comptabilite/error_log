@@ -1,0 +1,8 @@
+[16-Nov-2021 17:36:58 Africa/Abidjan] PHP Warning:  Undefined array key "num_facture" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Searches/Etablissement/Comptabilite/search_ecritures.php on line 33
+[16-Nov-2021 17:36:58 Africa/Abidjan] PHP Warning:  Undefined array key "num_secu" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Searches/Etablissement/Comptabilite/search_ecritures.php on line 33
+[16-Nov-2021 17:36:58 Africa/Abidjan] PHP Warning:  Undefined array key "num_patient" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Searches/Etablissement/Comptabilite/search_ecritures.php on line 33
+[16-Nov-2021 17:36:58 Africa/Abidjan] PHP Warning:  Undefined array key "nom_prenom" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Searches/Etablissement/Comptabilite/search_ecritures.php on line 33
+[16-Nov-2021 17:41:58 Africa/Abidjan] PHP Warning:  Undefined array key "num_facture" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Searches/Etablissement/Comptabilite/search_ecritures.php on line 33
+[16-Nov-2021 17:41:58 Africa/Abidjan] PHP Warning:  Undefined array key "num_secu" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Searches/Etablissement/Comptabilite/search_ecritures.php on line 33
+[16-Nov-2021 17:41:58 Africa/Abidjan] PHP Warning:  Undefined array key "num_patient" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Searches/Etablissement/Comptabilite/search_ecritures.php on line 33
+[16-Nov-2021 17:41:58 Africa/Abidjan] PHP Warning:  Undefined array key "nom_prenom" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Searches/Etablissement/Comptabilite/search_ecritures.php on line 33

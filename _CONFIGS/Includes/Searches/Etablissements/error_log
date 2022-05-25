@@ -1,0 +1,10 @@
+[17-Jun-2021 01:43:32 Africa/Abidjan] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function ETABLISSEMENTS::trouver_etablissement(), 1 passed in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Searches/Parametres/Etablissements/search_etablissement.php on line 13 and exactly 2 expected in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/ETABLISSEMENTS.php:413
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Searches/Parametres/Etablissements/search_etablissement.php(13): ETABLISSEMENTS->trouver_etablissement('000199998')
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/ETABLISSEMENTS.php on line 413
+[17-Jun-2021 01:43:32 Africa/Abidjan] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function ETABLISSEMENTS::trouver_etablissement(), 1 passed in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Searches/Parametres/Etablissements/search_etablissement.php on line 13 and exactly 2 expected in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/ETABLISSEMENTS.php:413
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Searches/Parametres/Etablissements/search_etablissement.php(13): ETABLISSEMENTS->trouver_etablissement('000199998')
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/ETABLISSEMENTS.php on line 413

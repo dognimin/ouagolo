@@ -1,0 +1,152 @@
+[24-Nov-2021 14:51:29 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/produits.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[24-Nov-2021 15:51:11 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/produits.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[24-Nov-2021 15:55:36 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/produits.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[24-Nov-2021 15:56:27 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/produits.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[24-Nov-2021 15:57:58 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/produits.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[24-Nov-2021 16:03:01 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/produits.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[24-Nov-2021 17:05:59 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/produits.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[27-Nov-2021 02:16:42 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/commandes.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[27-Nov-2021 02:19:05 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/commandes.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[27-Nov-2021 07:55:46 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/commandes.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[27-Nov-2021 07:55:53 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/commandes.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[30-Nov-2021 17:13:15 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/stock.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[30-Nov-2021 17:13:59 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/stock.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[30-Nov-2021 21:11:49 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/ventes.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[30-Nov-2021 21:14:51 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/ventes.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[30-Nov-2021 21:17:42 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/ventes.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[02-Dec-2021 12:14:00 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/ventes.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[02-Dec-2021 13:06:47 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/ventes.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32
+[02-Dec-2021 15:18:22 UTC] PHP Fatal error:  Uncaught Error: Class "Mike42\Escpos\PrintConnectors\FilePrintConnector" not found in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 6
+[02-Dec-2021 15:19:56 UTC] PHP Fatal error:  Uncaught Error: Class "Mike42\Escpos\PrintConnectors\FilePrintConnector" not found in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 6
+[02-Dec-2021 15:21:33 UTC] PHP Fatal error:  Uncaught Error: Class "Mike42\Escpos\PrintConnectors\FilePrintConnector" not found in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php:6
+Stack trace:
+#0 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 6
+[02-Dec-2021 15:21:54 UTC] PHP Fatal error:  Uncaught Error: Class "Mike42\Escpos\Printer" not found in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php:12
+Stack trace:
+#0 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 12
+[02-Dec-2021 15:23:34 UTC] PHP Fatal error:  Uncaught Error: Class "Mike42\Escpos\PrintConnectors\WindowsPrintConnector" not found in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 10
+[02-Dec-2021 15:24:09 UTC] PHP Fatal error:  Uncaught Error: Class "Mike42\Escpos\PrintConnectors\WindowsPrintConnector" not found in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 10
+[03-Dec-2021 14:23:24 UTC] PHP Fatal error:  Uncaught Error: Class "Mike42\Escpos\PrintConnectors\WindowsPrintConnector" not found in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 10
+[03-Dec-2021 14:24:39 UTC] PHP Fatal error:  Uncaught Error: Class "Mike42\Escpos\PrintConnectors\WindowsPrintConnector" not found in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 10
+[03-Dec-2021 14:33:29 UTC] PHP Fatal error:  Uncaught Error: Class "Mike42\Escpos\PrintConnectors\FilePrintConnector" not found in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 8
+[03-Dec-2021 14:36:27 UTC] PHP Fatal error:  Uncaught Error: Class "Mike42\Escpos\PrintConnectors\MultiplePrintConnector" not found in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 8
+[03-Dec-2021 14:37:44 UTC] PHP Fatal error:  Uncaught Error: Class "Mike42\Escpos\PrintConnectors\WindowsPrintConnector" not found in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 8
+[03-Dec-2021 14:37:45 UTC] PHP Fatal error:  Uncaught Error: Class "Mike42\Escpos\PrintConnectors\WindowsPrintConnector" not found in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 8
+[03-Dec-2021 14:37:45 UTC] PHP Fatal error:  Uncaught Error: Class "Mike42\Escpos\PrintConnectors\WindowsPrintConnector" not found in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 8
+[03-Dec-2021 16:06:10 Africa/Abidjan] PHP Warning:  Undefined array key 0 in /home/techouse/public_html/projets/ouagolo/vendor/tecnick.com/tcpdf/tcpdf.php on line 17276
+[03-Dec-2021 16:06:10 Africa/Abidjan] PHP Warning:  Undefined array key 0 in /home/techouse/public_html/projets/ouagolo/vendor/tecnick.com/tcpdf/tcpdf.php on line 17643
+[03-Dec-2021 16:37:20 Africa/Abidjan] PHP Warning:  Undefined array key "montant_net" in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 92
+[03-Dec-2021 16:37:27 Africa/Abidjan] PHP Warning:  Undefined array key "montant_net" in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 92
+[03-Dec-2021 16:41:52 Africa/Abidjan] PHP Fatal error:  Uncaught TypeError: number_format(): Argument #1 ($num) must be of type float, string given in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php:93
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php(93): number_format()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 93
+[03-Dec-2021 17:02:57 UTC] PHP Parse error:  Unclosed '{' on line 84 in /home/techouse/public_html/projets/ouagolo/etablissement/pharmacie/imprimer-recu.php on line 85

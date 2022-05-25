@@ -1,0 +1,2 @@
+[17-Nov-2021 20:39:48 Africa/Abidjan] PHP Warning:  PDOStatement::execute(): SQLSTATE[22001]: String data, right truncated: 1406 Data too long for column 'rendez_vous_code' at row 1 in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/ETABLISSEMENTS.php on line 170
+[17-Nov-2021 20:41:21 Africa/Abidjan] PHP Warning:  Undefined array key "num_population" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Submits/Etablissement/RendezVous/submit_rdv.php on line 35

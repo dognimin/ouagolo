@@ -1,0 +1,26 @@
+{
+  "name": "vendor_name/ouagolo",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Dognimin Koulibali",
+      "email": "dognimin.koulibali@techouse.io"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "App\\": "_CONFIGS/Classes/"
+    }
+  },
+  "require": {
+    "phpmailer/phpmailer": "*",
+    "dompdf/dompdf": "v0.8.6",
+    "phpoffice/phpspreadsheet": "1.20.0",
+    "tecnick.com/tcpdf": "*",
+    "mpdf/mpdf": "*",
+    "ext-json": "*",
+    "ext-pdo": "*"
+  }
+}

@@ -1,0 +1,5 @@
+[25-Nov-2021 15:47:35 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:32
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/parametres/referentiels/medicaments.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 32

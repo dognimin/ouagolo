@@ -1,0 +1,10 @@
+[23-Nov-2021 17:44:30 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_1.php:27
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/fournisseurs.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_1.php on line 27
+[23-Nov-2021 17:58:10 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_1.php:27
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/fournisseurs.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_1.php on line 27

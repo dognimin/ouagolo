@@ -1,0 +1,1 @@
+[14-Dec-2021 10:45:02 Africa/Abidjan] PHP Warning:  PDOStatement::execute(): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'CHB0000003-2021-12-14' for key 'PRIMARY' in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/ETABLISSEMENTS.php on line 3038

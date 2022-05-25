@@ -1,0 +1,29 @@
+body {
+    background-image: url("../../_PUBLICS/images/ouagolo-bckgd.jpg") !important;
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#div_connexion_main_page {
+    width: 100%;
+    z-index: 999;
+    height: 90vh;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+
+#div_connexion, #div_email, #div_creation_admin, #div_mot_de_passe {
+    padding: 15px;
+    margin: 5px;
+    display: table-cell;
+    border-radius: 10px;
+    vertical-align: middle;
+    border-top: 3px double #ff0000;
+    border-left: 3px double #ff0000;
+    border-right: 3px double #0071bc;
+    border-bottom: 3px double #0071bc;
+}

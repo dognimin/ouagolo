@@ -1,0 +1,2 @@
+[14-Jun-2021 21:09:15 Africa/Abidjan] PHP Warning:  PDOStatement::execute(): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'HOPITAL GéNéRAL' for key 'reseau_soin_libelle' in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/RESEAUXDESOINS.php on line 111
+[14-Jun-2021 21:42:08 Africa/Abidjan] PHP Warning:  PDOStatement::execute(): SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'HOPITAL GéNéRAL' for key 'reseau_soin_libelle' in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/RESEAUXDESOINS.php on line 111

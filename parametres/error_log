@@ -1,0 +1,7 @@
+[07-Nov-2021 13:47:09 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_1.php:27
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/parametres/tables-de-valeurs.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_1.php on line 27
+[15-Nov-2021 11:07:36 Africa/Abidjan] PHP Warning:  Constant AUTHOR already defined in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Classes/BDD.php on line 29
+[15-Nov-2021 11:07:36 Africa/Abidjan] PHP Warning:  Undefined variable $file_name in /home/techouse/public_html/projets/ouagolo/parametres/exporter-table-de-valeurs.php on line 2867

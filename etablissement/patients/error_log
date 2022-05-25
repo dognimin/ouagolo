@@ -1,0 +1,7 @@
+[09-Nov-2021 17:47:08 Africa/Abidjan] PHP Fatal error:  Uncaught Error: Undefined constant "TITLE" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php:28
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/etablissement/patients/index.php(1): include()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Headers/header_2.php on line 28
+[11-Dec-2021 14:38:44 Africa/Abidjan] PHP Warning:  Trying to access array offset on value of type bool in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Titles.php on line 125
+[11-Dec-2021 14:38:44 Africa/Abidjan] PHP Warning:  Trying to access array offset on value of type bool in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Titles.php on line 125

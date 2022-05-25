@@ -1,0 +1,37 @@
+[23-Nov-2021 14:35:06 Africa/Abidjan] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, string given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Index.php:62
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Index.php(62): in_array()
+#1 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Index.php on line 62
+[23-Nov-2021 17:15:53 Africa/Abidjan] PHP Warning:  Undefined variable $payss in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_fournisseur.php on line 25
+[23-Nov-2021 17:15:53 Africa/Abidjan] PHP Warning:  foreach() argument must be of type array|object, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_fournisseur.php on line 25
+[23-Nov-2021 17:20:28 Africa/Abidjan] PHP Warning:  Undefined variable $payss in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_fournisseur.php on line 25
+[23-Nov-2021 17:20:28 Africa/Abidjan] PHP Warning:  foreach() argument must be of type array|object, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/_Forms/form_fournisseur.php on line 25
+[23-Nov-2021 17:48:00 Africa/Abidjan] PHP Warning:  Undefined array key "email" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Fournisseurs.php on line 80
+[23-Nov-2021 17:48:00 Africa/Abidjan] PHP Warning:  Undefined array key "num_telephone_1" in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Fournisseurs.php on line 81
+[30-Nov-2021 14:56:56 Africa/Abidjan] PHP Warning:  Undefined variable $services in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 130
+[30-Nov-2021 14:56:56 Africa/Abidjan] PHP Warning:  foreach() argument must be of type array|object, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 130
+[10-Dec-2021 08:39:58 Africa/Abidjan] PHP Warning:  Trying to access array offset on value of type bool in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Index.php on line 30
+[10-Dec-2021 08:43:05 Africa/Abidjan] PHP Warning:  Trying to access array offset on value of type bool in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Index.php on line 30
+[10-Dec-2021 08:43:18 Africa/Abidjan] PHP Warning:  Trying to access array offset on value of type bool in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Index.php on line 30
+[10-Dec-2021 08:45:15 Africa/Abidjan] PHP Warning:  Trying to access array offset on value of type bool in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Index.php on line 30
+[10-Dec-2021 08:45:36 Africa/Abidjan] PHP Warning:  Trying to access array offset on value of type bool in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Index.php on line 30
+[10-Dec-2021 11:25:19 Africa/Abidjan] PHP Warning:  Trying to access array offset on value of type bool in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Index.php on line 30
+[10-Dec-2021 13:57:16 Africa/Abidjan] PHP Warning:  Trying to access array offset on value of type bool in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Index.php on line 30
+[11-Dec-2021 14:05:44 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Index.php on line 35
+[11-Dec-2021 14:07:10 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Index.php on line 79
+[11-Dec-2021 14:08:54 Africa/Abidjan] PHP Warning:  Array to string conversion in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Index.php on line 47
+[12-Dec-2021 01:30:42 Africa/Abidjan] PHP Warning:  Undefined variable $sous_modules in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 174
+[12-Dec-2021 01:30:42 Africa/Abidjan] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php:174
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php(174): in_array()
+#1 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Index.php(41): include('/home/techouse/...')
+#2 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 174
+[12-Dec-2021 01:30:46 Africa/Abidjan] PHP Warning:  Undefined variable $sous_modules in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 174
+[12-Dec-2021 01:30:46 Africa/Abidjan] PHP Fatal error:  Uncaught TypeError: in_array(): Argument #2 ($haystack) must be of type array, null given in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php:174
+Stack trace:
+#0 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php(174): in_array()
+#1 /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Pages/Etablissement/Index.php(41): include('/home/techouse/...')
+#2 {main}
+  thrown in /home/techouse/public_html/projets/ouagolo/_CONFIGS/Includes/Menu.php on line 174
